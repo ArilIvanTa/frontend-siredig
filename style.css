@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #99D5BF;
+    --tua: #579981;
+    --muda: #C7E6C9;
+    --putih: #fff;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar start */
+.navbar {
+    background-color: #00FF80;
+}
+
+.navbar img {
+    height: 2.5rem;
+    width: auto;
+}
+
+.navbar .dropdown-menu a {
+    background-color: var(--primary);
+    color: var(--tua);
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: var(--primary);
+}
+
+.navbar .dropdown-menu {
+    background-color: var(--primary);
+}
+
+.navbar .warna a {
+    font-weight: 700;
+    text-decoration: none;
+    color: aqua;
+}
+
+.navbar .login a {
+    border-radius: 5px;
+    border: 2px solid var(--putih);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+}
+
+.navbar .NB {
+    line-height: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.navbar .NB a {
+    color: var(--putih);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.navbar .NB a:hover {
+    color: var(--tua);
+}
+
+.navbar .masuk {
+    color: var(--putih);
+    transition: 0.3s;
+}
+
+.navbar .masuk:hover {
+    color: var(--tua);
+    background-color: var(--putih);
+}
+
+.navbar .teks {
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+/* navbar end */
+
+/* list user */
+.content-wrapper {
+    background-color: #fff;
+}
+
+.btn button {
+    padding: 5px;
+    margin-top: -6px;
+    font-size: 12px;
+    background-color: #3DA496;
+    color: #fff;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.btn i {
+    margin-right: 5px;
+
+}
+
+.btn button:hover {
+    background-color: #28d3bc;
+    color: #fff;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.warna a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.table {
+    background-color: #f3f3f3;
+}
+
+thead {
+    background-color: #3DA496;
+    color: #fff;
+}
+
+.table th {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.table td {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* list user */
+
+/* form user */
+.row label {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.asik input {
+    height: 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    border-radius: 10px;
+    border: 0;
+}
+
+.asik textarea {
+    border-radius: 10px;
+    border: 0;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.formuser .card-body {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.tombolform a {
+    border-radius: 10px;
+}
+
+/* form user */
+
+/* list menu */
+td img {
+    width: 50px;
+    height: 50px;
+}
+
+tr .menu {
+    line-height: 50px;
+    height: 50px;
+    position: relative;
+}
+
+/* list menu */
+
+/* form menu */
+.custom-file label {
+    height: 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    border-radius: 10px;
+    border: 0;
+}
+
+/* form menu */
+
+/* menu */
+.makanan img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.makanan {
+    background-color: var(--muda);
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.makanan h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.makanan h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.makanan a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--putih);
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: var(--tua);
+    transition: 0.3s;
+}
+
+.makanan a:hover {
+    color: var(--tua);
+    background-color: var(--primary);
+}
+
+.makanan .col {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.makanan p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--tua);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.makanan .card {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0;
+    height: 18rem;
+}
+
+.makanan .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
