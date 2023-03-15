@@ -97,7 +97,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="input-group mb-3">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="inputGroupFile02">
-                        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Masukkan Bukti Transfer</label>
                     </div>
                     <div class="input-group-append">
                         <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>

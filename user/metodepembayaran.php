@@ -114,16 +114,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </div>
                                 <div class="card-body pb-0 pt-2">
                                     <div class="row pt-2">
-                                        <div class="col-12">
-                                            <p class="">No Meja<span class="font-weight-normal float-right">RP 15.000</span></p>
-                                            <p class="">Nasi Goreng<span class="font-weight-normal float-right">RP 15.000</span></p>
+                                        <div class="col-12 mb-2">
+                                            <p class=" font-weight-bold text-dark">Nama<span class="font-weight-bold float-right">ivan</span></p>
+                                            <p class=" font-weight-bold text-dark">No Meja<span class="font-weight-bold float-right">01</span></p>
                                         </div>
                                         <div class="col-12">
-                                            <p class="mb-2">Nasi Goreng<span class="font-weight-normal float-right">RP 15.000</span></p>
-                                            <p class="mb-2">Nasi Goreng<span class="font-weight-normal float-right">RP 15.000</span></p>
+                                            <p class="mb-0">Nasi Goreng<span class="font-weight-normal float-right">RP 15.000</span></p>
+                                            <p class="mb-0">Nasi Goreng<span class="font-weight-normal float-right">RP 15.000</span></p>
                                         </div>
                                         <div class="col-12 pb-2 border-bottom">
-                                            <p class="font-weight-normal mb-2">Metode Pembayaran <span class="float-right"><img src="../img/bri.png" alt="" style="height: 1rem;"></span></p>
+                                            <p class="font-weight-bold mb-2">Metode Pembayaran <span class="float-right"><img src="../img/bri.png" alt="" style="height: 1.2rem;"></span></p>
                                         </div>
                                         <div class="col-12 pt-3">
                                             <p class="font-weight-bold mb-3">Total Pembayaran<span class="font-weight-bold float-right">RP 30.000</span></p>
