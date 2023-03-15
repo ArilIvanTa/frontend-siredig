@@ -12,10 +12,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
   <!-- aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- css saya -->
@@ -31,7 +45,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
       <div class="container">
         <a href="#" class="navbar-brand">
-          <img src="img/loogo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
+          <img src="../img/loogo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
         </a>
 
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,309 +59,117 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Left navbar links -->
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="index3.html" class="bar">Beranda</a>
+                <a href="index_admin.php" class="bar">Dashboard</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="bar ml-5">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="bar ml-5">Order</a>
+                <a href="pesananadmin.php" class="bar">Pesanan</a>
               </li>
               <li class="nav-item dropdown">
-                <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="bar ml-5 dropdown-toggle">Admin</a>
+                <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="bar dropdown-toggle">Admin</a>
                 <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                  <li><a href="#" class="dropdown-item">List User</a></li>
-                  <li><a href="#" class="dropdown-item">Form User</a></li>
+                  <li><a href="daftarpengguna.php" class="dropdown-item">List User</a></li>
+                  <li><a href="formuser.php" class="dropdown-item">Form User</a></li>
 
                   <li class="dropdown-divider"></li>
 
-                  <li><a href="#" class="dropdown-item">List Menu</a></li>
-                  <li><a href="#" class="dropdown-item">Form Menu</a></li>
+                  <li><a href="daftarmenu_view.php" class="dropdown-item">List Menu</a></li>
+                  <li><a href="formmenu.php" class="dropdown-item">Form Menu</a></li>
 
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="masuk.php" class="masuk ml-5">Masuk</a>
+                <a href="" class="bar" data-toggle="modal" data-target=".modal">Keluar</a>
               </li>
             </ul>
         </div>
     </nav>
     <!-- /.navbar -->
 
-
-
-
-    <div class="content mt-5">
-      <div class="container">
-
-        <div class="row header">
-          <div class="col" data-aos="fade-right">
-            <h1><span>FRESH</span> FOOD</h1>
-            <h2>&EAT FOOD</h2>
-            <p><span>Eat good, live good, and eat good.</span><br>
-              Nek mangan gausah miker<br> dunyo, marai ga nikmat.</p>
-            <a href="menu_admin.php" class="btn">Mulai</a>
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Keluar?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="col" data-aos="fade-left">
-            <img src="../img/Group 100.png" alt="">
+          <div class="modal-body">
+            <p>Apakah anda ingin Keluar?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" type="button" class="btn btn-danger" data-dismiss="modal">Tidak</a>
+            <a href="../index.php" type="button" class="btn btn-success">Iya</a>
           </div>
         </div>
       </div>
-
-      <div class="container main">
-        <div class="text-center head">
-          <div class="col" data-aos="zoom-in-up">
-            <h2>Rekomendasi</h2>
-            <P class="text-center mt-5 mb-2">Makanan Favoritmu</P>
-          </div>
-          <div class="col" data-aos="fade-right">
-            <h3 class="judul">Makanan</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-              <img src="img/a.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Burger Special</h5>
-                <p class="card-text">Rp25.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="100">
-              <img src="img/nasigoreng.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Nasi Goreng</h5>
-                <p class="card-text">Rp15.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="200">
-              <img src="img/pasta.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Pasta</h5>
-                <p class="card-text">Rp20.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="300">
-              <img src="img/pizza.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Pizza</h5>
-                <p class="card-text">Rp50.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="400">
-              <img src="img/seafood.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Seafood</h5>
-                <p class="card-text">Rp30.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center head">
-          <div class="col" data-aos="zoom-in-up">
-            <P class="text-center mt-5 mb-2">Minuman Favoritmu</P>
-          </div>
-          <div class="col" data-aos="fade-right">
-            <h3 class="juduldua">Minuman</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-              <img src="img/bull.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Bullgogi</h5>
-                <p class="card-text">Rp15.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="100">
-              <img src="img/coffelatte.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Coffe Latte</h5>
-                <p class="card-text">Rp15.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="200">
-              <img src="img/macha.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Macha Latte</h5>
-                <p class="card-text">Rp10.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="300">
-              <img src="img/chocolatte.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Chocolatte</h5>
-                <p class="card-text">Rp15.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="400">
-              <img src="img/seafood.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Lemon Tea</h5>
-                <p class="card-text">Rp8.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="text-center head">
-          <div class="col" data-aos="zoom-in-up">
-            <P class="text-center mt-5 mb-2">Cemilan Favoritmu</P>
-          </div>
-          <div class="col" data-aos="fade-right">
-            <h3 class="juduldua">Cemilan</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-              <img src="img/kentanggoreng.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Kentang Goreng</h5>
-                <p class="card-text">Rp13.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="100">
-              <img src="img/churos.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Churros</h5>
-                <p class="card-text">Rp10.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="200">
-              <img src="img/makaroni.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Makaroni Schotel</h5>
-                <p class="card-text">Rp15.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="300">
-              <img src="img/kue choco late.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Chocolate Cake</h5>
-                <p class="card-text">Rp25.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="400">
-              <img src="img/Mozzarela.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Mozarella Stick</h5>
-                <p class="card-text">Rp18.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="text-center head">
-          <div class="col" data-aos="zoom-in-up">
-            <P class="text-center mt-5 mb-2">Paket Favoritmu</P>
-          </div>
-          <div class="col" data-aos="fade-right">
-            <h3 class="juduldua">Paket</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-              <img src="img/a.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Burger Special</h5>
-                <p class="card-text">Rp25.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="100">
-              <img src="img/nasigoreng.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Nasi Goreng</h5>
-                <p class="card-text">Rp15.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="200">
-              <img src="img/pasta.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Pasta</h5>
-                <p class="card-text">Rp20.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="300">
-              <img src="img/pizza.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Pizza</h5>
-                <p class="card-text">Rp50.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="400">
-              <img src="img/seafood.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-text">Seafood</h5>
-                <p class="card-text">Rp30.000,00</p>
-                <a href="viewproduk.php" class="btn mt-2">Order</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-
-
     </div>
+
+    <section class="dashboard mt-5">
+      <div class="container">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-3">Dashboard</h2>
+          </div>
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-light">
+              <div class="inner">
+                <h3>150</h3>
+
+                <p>Pesanan</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-pizza-slice"></i>
+              </div>
+              <a href="pesananadmin.php" class="small-box-footer">Cek Pesanan<i class="fas fa-arrow-circle-right ml-1"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-light">
+              <div class="inner">
+                <h3>Menu</h3>
+
+                <p>Tambah Menu</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-plus"></i>
+              </div>
+              <a href=" daftarmenu_view.php" class="small-box-footer">Tambah Menu <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-light text-success">
+              <div class="inner">
+                <h3>User</h3>
+
+                <p>User List</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-user "></i>
+              </div>
+              <a href="daftarpengguna.php" class="small-box-footer">User <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- chart -->
+        <div class="row mt-3 mb-5 rounded bg-light" style="height: 400px;">
+          <div class="col-6 p-2">
+            <div id="chart" style="height: 100%; width: 100%;"></div>
+          </div>
+          <div class="col-6">
+            <div id="linechart" style="height: 100%; width: 100%;"></div>
+          </div>
+        </div>
+    </section>
   </div>
 
   <!-- Control Sidebar -->
@@ -366,12 +188,135 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- aos -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   </script>
   <!-- AdminLTE App -->
   <script src="../dist/js/adminlte.min.js"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="../dist/js/demo.js"></script>
+  <!-- Page specific script -->
+  <!-- echart -->
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+  <!-- my js -->
+  <script type="text/javascript">
+    var dom = document.getElementById('chart');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+      legend: {
+        top: 'bottom'
+      },
+      toolbox: {
+        show: true,
+        feature: {
+          mark: {
+            show: true
+          },
+          dataView: {
+            show: true,
+            readOnly: false
+          },
+          restore: {
+            show: true
+          },
+          saveAsImage: {
+            show: true
+          }
+        }
+      },
+      series: [{
+        name: 'Nightingale Chart',
+        type: 'pie',
+        radius: [15, 120],
+        center: ['50%', '50%'],
+        roseType: 'area',
+        itemStyle: {
+          borderRadius: 8
+        },
+        data: [{
+            value: 40,
+            name: 'rose 1'
+          },
+          {
+            value: 38,
+            name: 'rose 2'
+          },
+          {
+            value: 32,
+            name: 'rose 3'
+          },
+          {
+            value: 30,
+            name: 'rose 4'
+          },
+          {
+            value: 28,
+            name: 'rose 5'
+          },
+          {
+            value: 26,
+            name: 'rose 6'
+          },
+          {
+            value: 22,
+            name: 'rose 7'
+          },
+          {
+            value: 18,
+            name: 'rose 8'
+          }
+        ]
+      }]
+    };
+
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+
+  <!-- line chart -->
+  <script type="text/javascript">
+    var dom = document.getElementById('linechart');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+      xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [{
+        data: [150, 230, 224, 218, 135, 147, 260],
+        type: 'line'
+      }]
+    };
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
 </body>
 
 </html>

@@ -19,7 +19,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- css saya -->
-  <link rel="stylesheet" href="../lp.css">
+  <link rel="stylesheet" href="../user/siredig.css">
 </head>
 
 <body class="hold-transition layout-top-nav">
@@ -28,38 +28,47 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
       <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="../img/loogo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
+        </a>
+
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse order-3" id="navbarCollapse">
-          <!-- Left navbar links -->
+
+          <!-- Right navbar links -->
+          <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index_admin.php" class="bar">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a href="menu_admin.php" class="bar ml-5">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a href="order_admin.php" class="bar ml-5">Order</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="bar ml-5 dropdown-toggle">Admin</a>
+                <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                  <li><a href="daftarpengguna.php" class="dropdown-item">List User</a></li>
+                  <li><a href="formuser.php" class="dropdown-item">Form User</a></li>
+
+                  <li class="dropdown-divider"></li>
+
+                  <li><a href="daftarmenu_view.php" class="dropdown-item">List Menu</a></li>
+                  <li><a href="formmenu.php" class="dropdown-item">Form Menu</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="../index.php" class="masuk ml-5">Keluar</a>
+              </li>
+            </ul>
         </div>
-        <!-- Right navbar links -->
-        <ul class="order-1 order-md-1 navbar-nav navbar-no-expand ml-auto">
-          <li class="float-left">
-            <a href="index3.html" class="navbar-brand">
-              <img src="../img/logo.png" alt="SIREDIG" class="">
-            </a>
-          </li>
-        </ul>
-        <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-          <li class="nav-item NB">
-            <a href="index.php" class="teks">List Pengguna</a>
-          </li>
-          <li class="nav-item NB">
-            <a href="menu.php" class="teks">Tambah Pengguna</a>
-          </li>
-          <li class="nav-item NB">
-            <a href="daftarmenu.php" class="teks">List Menu</a>
-          </li>
-          <li class="nav-item NB">
-            <a href="menu.php" class="teks">Tambah Menu</a>
-          </li>
-          <li class="nav-item login ml-4">
-            <a class="btn btn-sm masuk" href="../index.php" role="button">Keluar</a>
-          </li>
-        </ul>
-      </div>
     </nav>
     <!-- /.navbar -->
 
@@ -85,7 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
             <div class="col-auto">
-              <a class="btn" href="menu.php"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Tambah Menu</a>
+              <a class="btn" href="formuser.php"><button type="button" class="btn btn-block btn-sm"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Menu</button></a>
             </div>
           </div>
         </div><!-- /.container-fluid -->

@@ -17,14 +17,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css">
     <!-- aos -->
-    <link rel="stylesheet" href="../https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- css saya -->
     <link rel="stylesheet" href="siredig.css">
 </head>
 
 <body class="hold-transition layout-top-nav">
     <div class="wrapper">
-
 
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
@@ -47,286 +46,224 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <a href="../index.php" class="bar">Beranda</a>
                             </li>
                             <li class="nav-item">
-                                <a href="menu.php" class="bar ml-5">Menu</a>
+                                <a href="menu.php" class="bar">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a href="order.php" class="bar ml-5">Order</a>
+                                <a href="order.php" class="bar">Order</a>
                             </li>
                             <li class="nav-item">
-                                <a href="masuk.php" class="masuk ml-5">Masuk</a>
+                                <a href="pesanan.php" class="bar">Pesanan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="order.php" class="bar">Masuk</a>
                             </li>
                         </ul>
                 </div>
         </nav>
         <!-- /.navbar -->
 
-
-        <div class="content mt-5">
+        <section class="menu pt-5 mb-5">
             <div class="container">
 
-                <div class="container main">
-                    <div class="text-center head">
-                        <div class="col" data-aos="zoom-in-up">
-                            <h2 class="mt-3 mb-5">Menu</h2>
-                        </div>
-                        <div class="col" data-aos="fade-right">
-                            <h3 class="judultiga">Makanan</h3>
-                        </div>
+                <!-- Preloader -->
+                <div class="preloader flex-column justify-content-center align-items-center">
+                    <p class="text-success" style="font-size: 1.5rem;">Harap Tunggu <span class="font-italic font-weight-bold">Siredig</span></p>
+                    <div class="spinner-grow text-success" role="status">
+                        <span class="sr-only">Loading...</span>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-                                <img src="../img/a.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Burger Special</h5>
-                                    <p class="card-text">Rp25.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="100">
-                                <img src="../img/nasigoreng.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Nasi Goreng</h5>
-                                    <p class="card-text">Rp15.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="200">
-                                <img src="../img/pasta.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Pasta</h5>
-                                    <p class="card-text">Rp20.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="300">
-                                <img src="../img/pizza.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Pizza</h5>
-                                    <p class="card-text">Rp50.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="400">
-                                <img src="../img/seafood.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Seafood</h5>
-                                    <p class="card-text">Rp30.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12" data-aos="fade-right">
-                        <span class="mt-4 judulempat">Minuman</span>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-                                <img src="../img/bull.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Bullgogi</h5>
-                                    <p class="card-text">Rp15.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="100">
-                                <img src="../img/coffelatte.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Coffe Latte</h5>
-                                    <p class="card-text">Rp15.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="200">
-                                <img src="../img/macha.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Macha Latte</h5>
-                                    <p class="card-text">Rp10.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="300">
-                                <img src="../img/chocolatte.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Chocolatte</h5>
-                                    <p class="card-text">Rp15.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="400">
-                                <img src="../img/seafood.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Lemon Tea</h5>
-                                    <p class="card-text">Rp8.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12" data-aos="fade-right">
-                        <span class="mt-4 judulempat">Cemilan</span>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-                                <img src="../img/kentanggoreng.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Kentang Goreng</h5>
-                                    <p class="card-text">Rp13.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="100">
-                                <img src="../img/churos.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Churros</h5>
-                                    <p class="card-text">Rp10.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="200">
-                                <img src="../img/makaroni.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Makaroni Schotel</h5>
-                                    <p class="card-text">Rp15.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="300">
-                                <img src="../img/kue choco late.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Chocolate Cake</h5>
-                                    <p class="card-text">Rp25.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="400">
-                                <img src="../img/Mozzarela.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Mozarella Stick</h5>
-                                    <p class="card-text">Rp18.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12" data-aos="fade-right">
-                        <span class="mt-4 judulempat">Paket</span>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left">
-                                <img src="../img/a.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Burger Special</h5>
-                                    <p class="card-text">Rp25.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="100">
-                                <img src="../img/nasigoreng.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Nasi Goreng</h5>
-                                    <p class="card-text">Rp15.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="200">
-                                <img src="../img/pasta.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Pasta</h5>
-                                    <p class="card-text">Rp20.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="300">
-                                <img src="../img/pizza.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Pizza</h5>
-                                    <p class="card-text">Rp50.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 11.5rem;" data-aos="flip-left" data-aos-delay="400">
-                                <img src="../img/seafood.png" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-text">Seafood</h5>
-                                    <p class="card-text">Rp30.000,00</p>
-                                    <a href="viewproduk.php" class="btn mt-2">Order</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
 
+                <h2 class="mb-4" data-aos="fade-up">Menu</h2>
+                <!-- pilihan menu -->
+                <div class="row bg-white">
+                    <div class="col-12 kategori">
+                        <a class="border rounded border-success text-success pt-1 pb-1 pr-4 pl-4 mr-2" href="#paket">Paket</a>
+                        <a class="border rounded border-success text-success pt-1 pb-1 pr-4 pl-4 mr-2" href="#makanan">Makanan</a>
+                        <a class="border rounded border-success text-success pt-1 pb-1 pr-4 pl-4 mr-2" href="#minuman">Minuman</a>
+                        <a class="border rounded border-success text-success pt-1 pb-1 pr-4 pl-4 mr-2" href="#cemilan">Cemilan</a>
+                    </div>
+                </div>
+                <!-- menu -->
+                <div class="row menu">
+                    <div class="col-12">
+                        <!-- paket -->
+                        <div class="konten" id="paket">
+                            <h3 class="mt-4" data-aos="zoom-up">Paket</h3>
+                            <div class="sec">
+                                <div class="box bg-light shadow-sm" data-aos="flip-left">
+                                    <img src="../img/paket/Paket1.png" alt="">
+                                    <h4 class="mb-3">Paket 1</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP30.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="100">
+                                    <img src="../img/paket/Paket2.png" alt="">
+                                    <h4 class="mb-3">Paket 2</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP60.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="200">
+                                    <img src="../img/paket/paket3.png" alt="">
+                                    <h4 class="mb-3">Paket 3</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP45.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="300">
+                                    <img src="../img/paket/Paket4.png" alt="">
+                                    <h4 class="mb-3">Paket 4</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP25.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="400">
+                                    <img src="../img/paket/Paket5.png" alt="">
+                                    <h4 class="mb-3">Paket 5</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP20.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- makanan -->
+                        <div class="konten" id="makanan">
+                            <h3 class="mt-4" data-aos="zoom-up">Makanan</h3>
+                            <div class="sec">
+                                <div class="box bg-light shadow-sm" data-aos="flip-left">
+                                    <img src="../img/makanan/a.png" alt="">
+                                    <h4 class="mb-3">Burger Special</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP25.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="100">
+                                    <img src="../img/makanan/nasigoreng.png" alt="">
+                                    <h4 class="mb-3">Nasi Goreng</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP15.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="200">
+                                    <img src="../img/makanan/pasta.png" alt="">
+                                    <h4 class="mb-3">Pasta</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP20.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="300">
+                                    <img src="../img/makanan/pizza.png" alt="">
+                                    <h4 class="mb-3">Pizza</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP50.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="400">
+                                    <img src="../img/makanan/seafood.png" alt="">
+                                    <h4 class="mb-3">Seafood</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP30.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- minuman -->
+                        <div class="konten" id="minuman">
+                            <h3 class="mt-4" data-aos="zoom-up">Minuman</h3>
+                            <div class="sec">
+                                <div class="box bg-light shadow-sm" data-aos="flip-left">
+                                    <img src="../img/minuman/bull.png" alt="">
+                                    <h4 class="mb-3">Coffe Milk</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP15.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="100">
+                                    <img src="../img/minuman/coffelatte.png" alt="">
+                                    <h4 class="mb-3">Coffe Latte</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP10.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="200">
+                                    <img src="../img/minuman/macha.png" alt="">
+                                    <h4 class="mb-3">Macha Latte</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP20.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="300">
+                                    <img src="../img/minuman/coffelatte.png" alt="">
+                                    <h4 class="mb-3">Chocolatte Milk</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP15.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="400">
+                                    <img src="../img/minuman/lemontea.png" alt="">
+                                    <h4 class="mb-3">Lemontea</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP8.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- cemilan -->
+                        <div class="konten" id="cemilan">
+                            <h3 class="mt-4" data-aos="zoom-up">Cemilan</h3>
+                            <div class="sec">
+                                <div class="box bg-light shadow-sm" data-aos="flip-left">
+                                    <img src="../img/cemilan/kentanggoreng.png" alt="">
+                                    <h4 class="mb-3">Kentang Goreng</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP13.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="100">
+                                    <img src="../img/cemilan/churos.png" alt="">
+                                    <h4 class="mb-3">Churos</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP10.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="200">
+                                    <img src="../img/cemilan/makaroni.png" alt="">
+                                    <h4 class="mb-3">Makaroni Shotel</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP15.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="300">
+                                    <img src="../img/cemilan/kue choco late.png" alt="">
+                                    <h4 class="mb-3">Chocolatte Cake</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP25.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                                <div class="box bg-light shadow-sm" data-aos="flip-left" data-aos-delay="400">
+                                    <img src="../img/cemilan/Mozzarela.png" alt="">
+                                    <h4 class="mb-3">Mozzarela Stick</h4>
+                                    <p class="d-flex justify-content-between pl-2 pr-2">RP18.000<span>Stok 5</span></p>
+                                    <a class="btn btn-sm btn-success" href="">Order</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+    </div>
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
 
-        <!-- REQUIRED SCRIPTS -->
-        <!-- tilt -->
-        <script type="text/javascript" src="vanilla-tilt.min.js"></script>
-        <!-- jQuery -->
-        <script src="plugins/jquery/jquery.min.js"></script>
-        <!-- Bootstrap 4 -->
-        <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- aos -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <!-- AdminLTE App -->
-        <script src="dist/js/adminlte.min.js"></script>
-        <!-- AdminLTE for demo purposes -->
-        <script src="dist/js/demo.js"></script>
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- REQUIRED SCRIPTS -->
+    <!-- tilt -->
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../dist/js/demo.js"></script>
 </body>
 
 </html>

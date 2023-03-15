@@ -17,7 +17,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- css saya -->
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../user/siredig.css">
 </head>
 
 <body class="hold-transition layout-top-nav">
@@ -26,8 +26,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
       <div class="container">
-        <a href="index3.html" class="navbar-brand">
-          <img src="img/logos.png" alt="SIREDIG" class="brand-image">
+        <a href="#" class="navbar-brand">
+          <img src="../img/loogo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
         </a>
 
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,35 +35,41 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </button>
 
         <div class="collapse navbar-collapse order-3" id="navbarCollapse">
-          <!-- Left navbar links -->
-        </div>
-        <!-- Right navbar links -->
-        <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-          <li class="nav-item NB">
-            <a href="landingpage.php" class="teks">Beranda</a>
-          </li>
-          <li class="nav-item NB">
-            <a href="menu.php" class="teks">Menu</a>
-          </li>
-          <li class="nav-item dropdown NB">
-            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="teks dropdown-toggle">User</a>
-            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow bawah">
-              <!-- Level two dropdown-->
-              <li><a href="daftarpengguna.php" class="dropdown-item">Daftar Pengguna</a></li>
-              <li><a href="daftarmenu.php" class="dropdown-item">Daftar Menu</a></li>
-              <!-- End Level two -->
+
+          <!-- Right navbar links -->
+          <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index_admin.php" class="bar">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a href="menu_admin.php" class="bar ml-5">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a href="order_admin.php" class="bar ml-5">Order</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="bar ml-5 dropdown-toggle">Admin</a>
+                <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                  <li><a href="daftarpengguna.php" class="dropdown-item">List User</a></li>
+                  <li><a href="formuser.php" class="dropdown-item">Form User</a></li>
+
+                  <li class="dropdown-divider"></li>
+
+                  <li><a href="daftarmenu_view.php" class="dropdown-item">List Menu</a></li>
+                  <li><a href="formmenu.php" class="dropdown-item">Form Menu</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="../index.php" class="masuk ml-5">Keluar</a>
+              </li>
             </ul>
-          </li>
-          <li class="nav-item login ml-4">
-            <a class="btn btn-sm masuk" href="masuk.php" role="button">Masuk</a>
-          </li>
-          <li class="nav-item login ml-2">
-            <a class="btn btn-sm daftar masuk" href="daftar.php" role="button">Daftar</a>
-          </li>
-        </ul>
-      </div>
+        </div>
     </nav>
     <!-- /.navbar -->
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->

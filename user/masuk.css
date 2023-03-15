@@ -79,6 +79,11 @@ body {
     font-size: 0.8rem;
 }
 
+.login-box button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .login-box .btn:hover {
     background-color: var(--tua);
     color: #fff;
